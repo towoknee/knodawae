@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "//fonts.googleapis.com/css?family=Lora" />
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script type='text/Javascript'>
+            var key = [[2],[1],[4],[3]];
+            var numAns = [0,0,0,0]
+            var lives = 3;
+        </script>
+        <script type='text/Javascript' src="Question.js">
+        </script>
+        <style>
+            body  {
+            background-image: url("images/blursunset.jpg");
+            background-color: rgb(0, 0, 0);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        </style>
+    </head>
+    
+    
+    <body>
+        <h1 id = 'rawr'>
+            Chapter 4: The End Is Nigh
+        </h1>
+        <p>After your great success with the ice cream machine, you feel completely refreshed. Or, you would, if this were your real body and you were really here. Unfortunately, as you recall, you are trapped inside a computer for whatever reason, and you cannot truly perceive sensations such as satiation or rest. What a sad life this is! You make note of this terrible misfortune and resolve to escape this cruel facsimile of life as soon as you possibly can.</p>
+        <p>You continue walking and before you know it, you find yourself on top of a building. Weren't you just in a cave below the surface of the earth? You guess that nothing's impossible in such a cruel facsimile of life. Either that, or you totally followed your growling stomach all this way. Both possibilities seem equally likely, so you just shrug and look back at the man in red.</p> 
+        <p>"This is it. You can escape from here if you can break through the barrier holding you back in this computer world!" The red homie looks at you intently. "This will be the greatest test of your skills yet! Concentrate your mind, and free yourself from this prison! Though, come to think of it, you might need something more focused. My final lesson to you... will be about functions.</p>
+        <p>"A <b>function</b> is a name given to a series of statements. When you <b>call</b> the function, it runs those statements. Functions take 0 or more <b>arguments, do something</b> with them, and then <b>return</b> something. <b>type(variableName)</b> from earlier was an example of a function. The function itself was called <b>type(foo)</b>, the <b>argument</b> was variableName, and the <b>return</b> value was the type of variableName.</p>
+        <p>"Python already has many functions defined. I will talk about just a few of them. There is print(foo), which will take what you put in and print it out to the screen. You can put anything you like in there, whether it be some constants or a variable:</p>
+        <div class='code1'>
+            >>>print(25)<br>
+            25<br>
+            >>>print(12.0)<br>
+            12.0<br>
+            >>>print("ebola")<br>
+            ebola<br>
+            >>>words = "Never gonna run around and desert you"<br>
+            >>>print(words)<br>
+            Never gonna run around and desert you<br>
+            >>>x = 3<br>
+            >>>print(x)<br>
+            3<br>
+        </div>
+        <p>"There's also a function to accept input from the keyboard, <b>input()</b>. When this is called, whatever argument you put will be displayed, and the cursor will stay where it is and flash, waiting for the user to type something in and hit Enter. This lets the user set values in the computer, rather than having you write all values before running. The user's input below is underlined to show the difference. input() returns whatever it reads in.</p>
+        <div class='code1'>
+            >>>input("What's your name? ") <br>
+            What's your name? <u>Kunta</u> <br>
+            'Kunta' <br>
+        </div>
+        <p>"There are functions to convert variables into other types, which are just the names of those types. int(foo), float(foo), and str(foo) respectively try to turn whatever is given to them into themselves. Remember that floats can be converted into ints, but everything after the decimal point will be lost. If the function doesn't succeed at converting its argument, then it'll give you an error message.</p>
+        <p>"You can call functions in the arguments of other functions. This is called function composition. It will work from the inside out. </p>
+        <div class='code1'>
+            >>>x = '6' # Right now, x is a string<br>
+            >>>print(int(x) + 4) <br>
+            10<br>
+        </div>
+        <p>"And finally, you can create your own custom functions using the def keyword. The syntax for writing your own functions looks like this:</p>
+        <div class='code1'>
+            >>>def functionName(foo, ... , bar): ## This is the header.<br>
+	            &emsp;&emsp;&emsp;&emsp;The body of the function; where the magic happens<br>
+	            &emsp;&emsp;&emsp;&emsp;return foobar<br>
+        </div>
+        <p>"Just like before, you have to indent everything after the function name, which shows that it's inside the scope of that function. The rules for function names are the same as the rules for variable names. You don't have to return anything; if you don't, then you end the function with an empty line. From then on, you can call this function by entering functionName() with the appropriate variables, and it will do everything in the body of the function.</p>
+        <p>"As a final side note, functions are more useful in saved script .py files. You don't have to run things through the interpreter all the time. Instead, you can create a new file with the shortcut Ctrl+N, and then save it like you would save a document in Microsoft Word, Notepad, or a picture in Paint: Ctrl+S and enter a filename. All the commands you write in the script file will be carried out when you run the script. This isn't important for this tutorial, but you will probably need it someday, so I'll mention it now so that it doesn't blindside you later.</p>
+        <p>"With all this knowledge, you should be able to break through and get back into your own world! Stand in the middle of that magic circle and just throw out everything you know!"</p>
+        <p>You thought this was supposed to be some sci-fi world. Are you actually stuck in a fantasy world or MMO or whatever? No matter the case, you have to get out, so here goes...!</p>
+        <h1 id = 'rawr'>
+            <img src="images/magiccircle3.gif" align="middle">
+        </h1>
+        <center>
+        <h3>Question One </h3>
+        <p>How do you convert <span class='codefont'>x</span>, originally an int, into a string?</p>
+        <button type='button' onclick='Grade(1,0)' id='1'>str(x)</button>
+        <button type='button' onclick='Grade(2,0)' id='2'>x = str(x)</button> <br>
+        <button type='button' onclick='Grade(3,0)' id='3'>str(x) = x</button>
+        <button type='button' onclick='Grade(4,0)' id='4'>x = "x"</button> <br>
+        <p id='incorrect0' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives0'>3</span> <span id='life0'>lives</span> left.</p>
+        <p id='partial0' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct0' style='display:none'>Congrats! You have found the wae!<br></p>
+        
+        <div id='q0' style="display:none">
+        <h3>Question Two </h3>
+        <p>What is/are the arguments of the following function?<br>
+            <span class='codefont'>def funFunction(one, two):<br>
+                &emsp;&emsp;&emsp;&emsp;return one + two
+            </span></p>
+        <button type='button' onclick='Grade(1,1)' id='11'>one, two</button>
+        <button type='button' onclick='Grade(2,1)' id='12'>one + two</button> <br>
+        <button type='button' onclick='Grade(3,1)' id='13'>funFunction</button>
+        <button type='button' onclick='Grade(4,1)' id='14'>def</button> <br>
+        <p id='incorrect1' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives1'>3</span> <span id='life1'>lives</span> left.</p>
+        <p id='partial1' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct1' style='display:none'>Congrats! You have found the wae!<br></p>
+        </div>
+        
+        <div id='q1' style="display:none">
+        <h3>Question Three</h3>
+        <p>How would you ask for user input and store it in the variable <span class='codefont'>name</span>?</p>
+        <button type='button' onclick='Grade(1,2)' id='21'>input("What is your name? ")</button>
+        <button type='button' onclick='Grade(2,2)' id='22'>Name = input("Please enter your name: ")</button> <br>
+        <button type='button' onclick='Grade(3,2)' id='23'>name("What is your name? ")</button>
+        <button type='button' onclick='Grade(4,2)' id='24'>name = input("What is your name? ")</button> <br>
+        <p id='incorrect2' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives2'>3</span> <span id='life2'>lives</span> left.</p>
+        <p id='partial2' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct2' style='display:none'>Congrats! You have found the wae!<br></p>
+        </div>
+        
+        <div id='q2' style="display:none">
+        <h3>Question Four </h3>
+        <p>What file format do you save Python files as?</p>
+        <button type='button' onclick='Grade(1,3)' id='31'>.txt</button>
+        <button type='button' onclick='Grade(2,3)' id='32'>.word</button> <br>
+        <button type='button' onclick='Grade(3,3)' id='33'>.py</button>
+        <button type='button' onclick='Grade(4,3)' id='34'>.python</button> <br>
+        <p id='incorrect3' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives3'>3</span> <span id='life3'>lives</span> left.</p>
+        <p id='partial3' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct3' style='display:none'>Congrats! You have found the wae!<br>
+        <a href = "youwin4.html"> >>> Follow the wae</a></p>
+        </div>
+        
+        <p id='failure' style='display:none'><a href = "youdied4.html"> >>> You have failed to find the wae</a></p>
+        
+        <br />
+        <p><strong>Health: </strong> 
+        <img src="images/knucklesLife.png" id="hp0" width="69" length="69">
+        <img src="images/knucklesLife.png" id="hp1" width="69" length="69">
+        <img src="images/knucklesLife.png" id="hp2" width="69" length="69"> </p>
+       </center>        
+        
+        
+        
+        
+        
+    </body>
+</html>

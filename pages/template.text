@@ -1,0 +1,12 @@
+<div id='q' style="display:none">
+<p><font face = "Comic Sans MS">Question</font></p>
+<p></p>
+<button type='button' onclick='Grade(1,)' id='1'>True</button>
+<button type='button' onclick='Grade(2,)' id='2'>False</button> <br>
+<button type='button' onclick='Grade(1,)' id='3'>True</button>
+<button type='button' onclick='Grade(2,)' id='4'>False</button> <br>
+<p id='incorrect' style='display:none'>Your answer is incorrect. 
+    You have <span id='lives'>3</span> <span id='life'>lives</span> left.</p>
+<p id='partial' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+<p id='correct' style='display:none'>Congrats! You have found the wae!<br></p>
+</div>

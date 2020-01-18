@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <title>DA WAE</title>
+        <link rel = "stylesheet" type = "text/css" href = "//fonts.googleapis.com/css?family=Lora" />
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script type='text/Javascript'>
+            var key = [[1],[2],[1,2,3],[3],[4]];
+            var numAns = [0,0,0,0,0]
+            var lives = 3;
+        </script>
+        <script type='text/Javascript' src="Question.js">
+        </script>
+        <style>
+            body  {
+            background-image: url("images/knucklesJesus2.png");
+            background-color: rgb(153, 158, 178);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <h1 id = 'rawr'>
+            Chapter 1: Acceptance
+        </h1>
+        <br>
+        <center>
+        
+        <div align="left">
+        <p>You take his hand and he helps you to your feet. He motions for you to follow as he begins walking down a rather familiar-seeming dirt road.</p>
+        <p>"Do you know those terrible anime where there's a loser protagonist who gets sucked into a fantasy world or an MMO or whatever?" he asks you as the two of you walk down the trail.</p>
+        <p>"Yeah," you respond again, with a growing feeling of dread in your bones. Surely you haven't been sucked into a fantasy world or an MMO or whatever?</p>
+        <p>"Great, then I don't have to explain that much. That's basically what's going on here, but with a few twists. The protagonist is you, and you're stuck in a computer."</p>
+        <p>"But I'm not a loser," you say in protest. Great, sounds like you are trapped after all.</p>
+        <p>"You're right. That's one of the twists: you're not a loser. Unlike those other guys, you can learn how to get out of here."</p>
+        <p>"Awesome! So can you show me the way out of here?" Hope swells within your heart. You want to just go back to doing whatever you were doing before this whole weird thing.</p>
+        <p>"No.. I can show you the <i>wae</i>, but I have to show you some things first before you can hack your way out of this world. Be careful, though. Hacking is a dangerous art, and <b>if you make too many mistakes, who knows what might happen to you in this world</b>... Wait!" He stops and motions for you to do the same, pointing ahead. "Look over there!"</p>
+        <p>Your eyes follow his pointing finger, and you spot some weird blue things floating in front of you. They look like clouds of blue squares, fluttering around and changing size nearly faster than your eyes can keep up with. What the heckity?</p>
+        <center><img src="images/unknownvariable.gif" align="middle"></center>
+        <p>As you watch the blue things undulate gently, the red guy helpfully explains, "What you see here is data. These chunks are called <b>variables</b>, and each variable has a <b>value</b>. Variables are one of the main things that the computer actually works on. In Python, there are a few different types of variables that are commonly used, like <span class='codefont'>ints</span>, <span class='codefont'>strings</span>, and <span class='codefont'>floats</span>.</p>
+        <p>"<span class='codefont'>Int</span>: That's short for "integer." You might know from your math classes already, but these are whole numbers. They can be positive or negative. Some examples of ints are <span class='codefont'>12, 0, 42</span>, and <span class='codefont'>-10000.</span></p>
+        <p>"<span class='codefont'>String</span>: These are like combinations of words and letters. You can have any character you want be part of a string. Some examples of strings are <span class='codefont'>hi</span>, <span class='codefont'>hello world</span>, <span class='codefont'>a</span>, and <span class='codefont'>abc123</span>. Be careful! There's a difference between the int <span class='codefont'>1</span> and the string "<span class='codefont'>1</span>". Strings are written with quotes around them to help differentiate between cases like these.</p>
+        <p>"<span class='codefont'>Float</span>: That's short for "floating point number." These are basically any number that has a decimal point in it, like fractions. Some examples of floats are <span class='codefont'>1.5</span>, <span class='codefont'>0.33333</span>, <span class='codefont'>50.0</span>, and <span class='codefont'>-12.9</span>. Doing math with floats is not always 100% accurate because of how the computer stores information, but you shouldn't need to worry about that yet. In general, ints are more precise. Just like how there are strings that look like ints, there are also floats that look like ints. <span class='codefont'>1.0</span> is different from <span class='codefont'>1</span>! If you want to assign some variable to be a float, you should include the decimal point.</p>
+        <p>"<span class='codefont'>Bool</span>: These only have two values, <span class='codefont'>True</span> and <span class='codefont'>False</span>. They have their uses, which you might be able to come up with later.</p>
+        <p>"To declare a variable, you just say its name, and assign it a value with the assignment operator, <span class='codefont'>=</span>. Common names that are used for teaching examples are foo and bar. Variable names are case sensitive! So <span class='codefont'>x</span> and <span class='codefont'>X</span> are different variables to the system! These names can't have any spaces in them. By convention, we give them names that start with lowercase letters, and if they're more than one word long, all the words after the first have their first letters capitalized. This is called camelcase, and it helps to read the name because you can tell where one word starts and the next begins. Separating different words with underscores (_) is also accepted, but I will use camelcase for the rest of this. For example: <span class='codefont'>variableName</span> is camelcase. <span class='codefont'>VariableName</span>, <span class='codefont'>variablename</span> and <span class='codefont'>vaRIaBlENaME</span> would also be accepted, but they're not great. Try to avoid starting variable names with uppercase letters or numbers, and definitely avoid using special characters like <span class='codefont'>%</span> and <span class='codefont'>!</span> in them!</p>
+        <div class='code1'>variableName = 5</div>
+        <p>"You can find out what the type of a variable is by using this command: <span class='codefont'>type(variableName)</span>.</p>
+        <div class='code1'> 
+            >>>type(variableName)<br>
+            class 'int'
+        </div>
+        <p>"You can even set variables equal to each other! Keep in mind that whatever's on the right side of the <span class='codefont'>=</span> has to have a value already.</p>
+        <div class='code1'>
+            >>>x = 1 <br>
+            >>>y = x <br>
+            >>>y <br>
+            1 <br>
+            >>>x = z <br>
+            <span style="color:red">## A nasty error will occur if you try this.</span>
+        </div>
+        <p>"With this information, you should be able to get those blue clusters out of our <i>wae</i>. Go get 'em, champ!" It looks like the red dude wants you to take care of those things. If you flex your newfound knowledge on them, you can probably get them to leave.</p>
+        </div> <!--End of Story-->
+        
+        
+        <h3>Question One </h3>
+        <p>Which one of these is the correct way to assign <span class='codefont'>42</span> to <span class='codefont'>x</span> as an int?</p>
+        <button type='button' onclick='Grade(1,0)' id='1'>x = 42</button>
+        <button type='button' onclick='Grade(2,0)' id='2'>42 = x</button> <br>
+        <button type='button' onclick='Grade(3,0)' id='3'>x = "42"</button>
+        <button type='button' onclick='Grade(4,0)' id='4'>Both a and c</button> <br>
+        <p id='incorrect0' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives0'>3</span> <span id='life0'>lives</span> left.</p>
+        <p id='partial0' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct0' style='display:none'>Congrats! You have found the wae!<br></p>
+        
+        <div id='q0' style="display:none">
+        <h3>Question Two </h3>
+        <p>True or False: <span class='codefont'>4</span> is the same as <span class='codefont'>4.0</span>.</p>
+        <button type='button' onclick='Grade(1,1,1,2)' id='11'>True</button>
+        <button type='button' onclick='Grade(2,1,1,2)' id='12'>False</button> <br>
+        <p id='incorrect1' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives1'>3</span> <span id='life1'>lives</span> left.</p>
+        <p id='partial1' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct1' style='display:none'>Congrats! You have found the wae!<br></p>
+        </div>
+        
+        <div id='q1' style="display:none">
+        <h3>Question Three</h3>
+        <p>Identify all the floats.</p>
+        <button type='button' onclick='Grade(1,2,3)' id='21'>3.73</button>
+        <button type='button' onclick='Grade(2,2,3)' id='22'>2.2</button> <br>
+        <button type='button' onclick='Grade(3,2,3)' id='23'>10.0</button>
+        <button type='button' onclick='Grade(4,2,3)' id='24'>12</button> <br>
+        <p id='incorrect2' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives2'>3</span> <span id='life2'>lives</span> left.</p>
+        <p id='partial2' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct2' style='display:none'>Congrats! You have found the wae!<br></p>
+        </div>
+        
+        <div id='q2' style="display:none">
+        <h3>Question Four </h3>
+        <p>If I typed in <span class='codefont'>x = 50.0</span>, what would happen if you typed in <span class='codefont'>type(x)?</span></p>
+        <button type='button' onclick='Grade(1,3)' id='31'>It would tell you x is a bool.</button>
+        <button type='button' onclick='Grade(2,3)' id='32'>It would tell you x is a string.</button> <br>
+        <button type='button' onclick='Grade(3,3)' id='33'>It would tell you x is a float.</button>
+        <button type='button' onclick='Grade(4,3)' id='34'>It would tell you x is an int.</button> <br>
+        <p id='incorrect3' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives3'>3</span> <span id='life3'>lives</span> left.</p>
+        <p id='partial3' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct3' style='display:none'>Congrats! You have found the wae!<br></p>
+        </div>
+        
+        <div id='q3' style="display:none">
+        <h3>Question Five </h3>
+        <p>Which of these names is the best for a variable?</p>
+        <button type='button' onclick='Grade(1,4)' id='41'>#myswag</button>
+        <button type='button' onclick='Grade(2,4)' id='42'>myswag</button> <br>
+        <button type='button' onclick='Grade(3,4)' id='43'>Myswag</button>
+        <button type='button' onclick='Grade(4,4)' id='44'>mySwag</button> <br>
+        <p id='incorrect4' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives4'>3</span> <span id='life4'>lives</span> left.</p>
+        <p id='partial4' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct4' style='display:none'>Congrats! You have found the wae!<br>
+        <a href = "youwin1.html"> >>> Follow the wae</a></p>
+        </div>
+        
+        <p id='failure' style='display:none'><a href = "youdied1.html"> >>> You have failed to find the wae</a></p>
+        
+        <br />
+        <p><strong>Health: </strong> 
+        <img src="images/knucklesLife.png" id="hp0" width="69" length="69">
+        <img src="images/knucklesLife.png" id="hp1" width="69" length="69">
+        <img src="images/knucklesLife.png" id="hp2" width="69" length="69"> </p>
+       </center>
+    </body>
+</html>

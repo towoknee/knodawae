@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+      
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script type='text/Javascript'>
+            var key = [[1],[2],[1,2,3],[3],[4]];
+            var numAns = [0,0,0,0,0]
+            var lives = 3;
+        </script>
+        <script type='text/Javascript' src="../Question.js">
+        </script>
+        <style>
+            body  {
+            background-image: url("../images/knucklesJesus.jpg");
+            background-color: rgb(153, 158, 178);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <h1 id = 'rawr'>
+            Chapter 1: Acceptance
+        </h1>
+        <br>
+        <center>
+        <div id='body'>
+        <div align="left">
+        <p>You take his hand and he helps you to your feet. He motions for you to follow as he begins walking down a rather familiar-seeming dirt road.</p>
+        <p>"Do you know those terrible anime where there's a loser protagonist who gets sucked into a fantasy world or an MMO or whatever?" he asks you as the two of you walk down the trail.</p>
+        <p>"Yeah," you respond again, with a growing feeling of dread in your bones. Surely you haven't been sucked into a fantasy world or an MMO or whatever?</p>
+        <p>"Great, then I don't have to explain that much. That's basically what's going on here, but with a few twists. The protagonist is you, and you're stuck in a computer."</p>
+        <p>"But I'm not a loser," you say in protest. Great, sounds like you are trapped after all.</p>
+        <p>"You're right. That's one of the twists: you're not a loser. Unlike those other guys, you can learn how to get out of here."</p>
+        <p>"Awesome! So can you show me the way out of here?" Hope swells within your heart. You want to just go back to doing whatever you were doing before this whole weird thing.</p>
+        <p>"No.. I can show you the <i>wae</i>, but I have to show you some things first before you can hack your way out of this world. Be careful, though. Hacking is a dangerous art, and <b>if you make too many mistakes, who knows what might happen to you in this world</b>... Wait!" He stops and motions for you to do the same, pointing ahead. "Look over there!"</p>
+        <p>Your eyes follow his pointing finger, and you spot some weird blue things floating in front of you. They look like clouds of blue squares, fluttering around and changing size nearly faster than your eyes can keep up with. What the heckity?</p>
+        <img src="images/BlurryBlissWithGuys.gif" align="middle">
+        <p>As you watch the blue things undulate gently, the red guy helpfully explains, "What you see here is data. These chunks are called <b>variables</b>, and each variable has a <b>value</b>. Variables are one of the main things that the computer actually works on. In Python, there are a few different types of variables that are commonly used, like <b>ints, strings, and floats.</b></p>
+        <p>"<u>Int</u>: That's short for "integer." You might know from your math classes already, but these are whole numbers. They can be positive or negative. Some examples of ints are <b>12, 0, 42</b>, and <b>-10000.</b></p>
+        <p>"<u>String</u>: These are like combinations of words and letters. You can have any character you want be part of a string. Some examples of strings are <b>hi</b>, <b>hello world</b>, <b>a</b>, and <b>abc123</b>. Be careful! There's a difference between the int <b>1</b> and the string "<b>1</b>". Strings are written with quotes around them to help differentiate between cases like these.</p>
+        <p>"<u>Float</u>: That's short for "floating point number." These are basically any number that has a decimal point in it, like fractions. Some examples of floats are <b>1.5</b>, <b>0.33333</b>, <b>50.0</b>, and <b>-12.9</b>. Doing math with floats is not always 100% accurate because of how the computer stores information, but you shouldn't need to worry about that yet. In general, ints are more precise. Just like how there are strings that look like ints, there are also floats that look like ints. <b>1.0</b> is different from <b>1</b>! If you want to assign some variable to be a float, you should include the decimal point.</p>
+        <p>"<u>Bool</u>: These only have two values, <b>True</b> and <b>False</b>. They have their uses, which you might be able to come up with later.</p>
+        <p>"To declare a variable, you just say its name, and assign it a value with the assignment operator, =. Variable names are case sensitive! So x and X are different variables to the system! These names can't have any spaces in them. By convention, we give them names that start with lowercase letters, and if they're more than one word long, all the words after the first have their first letters capitalized. This is called camelcase, and it helps to read the name because you can tell where one word starts and the next begins. Separating different words with underscores (_) is also accepted, but I will use camelcase for the rest of this. For example: <font face="Courier New">variableName</font> is camel-case. <font face="Courier New">VariableName</font>, <font face="Courier New">variablename</font> and <font face="Courier New">vaRIaBlENaME</font> would also be accepted, but they're not great. Try to avoid starting variable names with uppercase letters or numbers, and definitely avoid using special characters like % and ! in them!</p>
+        <p><code>variableName = 5</code></p>
+        <p>"You can find out what the type of a variable is by using this command: <b>type(variableName)</b>.</p>
+        <p><font face="Courier New">>>>type(variableName)</font></p>
+        <p><font face="Courier New">&lt;class 'int'&gt;</font></p>
+        <p>"You can even set variables equal to each other! Keep in mind that whatever's on the right side of the = has to have a value already.</p>
+        <code>
+            <p> >>>x = 1 </p>
+            <p> >>>y = x </p>
+            <p> >>>y </p>
+            <p> 1 </p>
+            <p> >>>x = z </p>
+            <p style="color:red">## A nasty error will occur if you try this.</p>
+        </code>
+        <p>"With this information, you should be able to get those blue clusters out of our <i>wae</i>. Go get 'em, champ!" It looks like the red dude wants you to take care of those things. If you flex your newfound knowledge on them, you can probably get them to leave.</p>
+        </div> <!--End of Story-->
+        
+        
+        <p><font face = "Comic Sans MS">Question One </font></p>
+        <p>Which one of these is the correct way to assign 42 to as a number?</p>
+        <button type='button' onclick='Grade(1,0)' id='1'>x = 42</button>
+        <button type='button' onclick='Grade(2,0)' id='2'>42 = x</button> <br>
+        <button type='button' onclick='Grade(3,0)' id='3'>x = "42"</button>
+        <button type='button' onclick='Grade(4,0)' id='4'>Both a and c</button> <br>
+        <p id='incorrect0' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives0'>3</span> <span id='life0'>lives</span> left.</p>
+        <p id='partial0' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct0' style='display:none'>Congrats! You have found the wae!<br></p>
+        
+        <div id='q0' style="display:none">
+        <p><font face = "Comic Sans MS">Question Two </font></p>
+        <p>True or False: <strong>4</strong> is the same as <strong>4.0</strong></p>
+        <button type='button' onclick='Grade(1,1,1,2)' id='11'>True</button>
+        <button type='button' onclick='Grade(2,1,1,2)' id='12'>False</button> <br>
+        <p id='incorrect1' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives1'>3</span> <span id='life1'>lives</span> left.</p>
+        <p id='partial1' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct1' style='display:none'>Congrats! You have found the wae!<br></p>
+        </div>
+        
+        <div id='q1' style="display:none">
+        <p><font face = "Comic Sans MS">Question Three</font></p>
+        <p>Identify all the floats.</p>
+        <button type='button' onclick='Grade(1,2,3)' id='21'>3.73</button>
+        <button type='button' onclick='Grade(2,2,3)' id='22'>2.2</button> <br>
+        <button type='button' onclick='Grade(3,2,3)' id='23'>10.0</button>
+        <button type='button' onclick='Grade(4,2,3)' id='24'>12</button> <br>
+        <p id='incorrect2' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives2'>3</span> <span id='life2'>lives</span> left.</p>
+        <p id='partial2' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct2' style='display:none'>Congrats! You have found the wae!<br></p>
+        </div>
+        
+        <div id='q2' style="display:none">
+        <p><font face = "Comic Sans MS">Question Four </font></p>
+        <p>If I typed in <strong>x = 50.0</strong>, what would happen if you typed in <strong>type(x)?</strong></p>
+        <button type='button' onclick='Grade(1,3)' id='31'>It would tell you x is a bool.</button>
+        <button type='button' onclick='Grade(2,3)' id='32'>It would tell you x is a string.</button> <br>
+        <button type='button' onclick='Grade(3,3)' id='33'>It would tell you x is a float.</button>
+        <button type='button' onclick='Grade(4,3)' id='34'>It would tell you x is an int.</button> <br>
+        <p id='incorrect3' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives3'>3</span> <span id='life3'>lives</span> left.</p>
+        <p id='partial3' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct3' style='display:none'>Congrats! You have found the wae!<br></p>
+        </div>
+        
+        <div id='q3' style="display:none">
+        <p><font face = "Comic Sans MS">Question Five </font></p>
+        <p>Which of these names is the best for a variable?</p>
+        <button type='button' onclick='Grade(1,4)' id='41'>#myswag</button>
+        <button type='button' onclick='Grade(2,4)' id='42'>myswag</button> <br>
+        <button type='button' onclick='Grade(3,4)' id='43'>Myswag</button>
+        <button type='button' onclick='Grade(4,4)' id='44'>mySwag</button> <br>
+        <p id='incorrect4' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives4'>3</span> <span id='life4'>lives</span> left.</p>
+        <p id='partial4' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct4' style='display:none'>Congrats! You have found the wae!<br>
+        <a href = "youwin1.html"> >>> Follow the wae</a></p>
+        </div>
+        
+        <p id='failure' style='display:none'><a href = "youdied1.html"> >>> You have failed to find the wae</a></p>
+        </div>
+        <br />
+        </center>
+        <img src="../images/knucklesLife.png" id="hp2" width="69" length="69">
+    </body>
+</html>

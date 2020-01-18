@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <script type='text/Javascript'>
+        var key = [[4,6]];
+        var numAns = [0]
+        var lives = 3;
+    </script>
+    <script type='text/Javascript' src="Question.js">
+    </script>
+</head>
+
+<body>
+    <center>
+    <button type='button' onclick='Grade(1,0,2,6)' id='1'>Answer 1</button>
+    <button type='button' onclick='Grade(2,0,2,6)' id='2'>Answer 2</button> <br>
+    <button type='button' onclick='Grade(3,0,2,6)' id='3'>Answer 3</button>
+    <button type='button' onclick='Grade(4,0,2,6)' id='4'>Answer 4</button> <br>
+    <button type='button' onclick='Grade(5,0,2,6)' id='5'>Answer 5</button>
+    <button type='button' onclick='Grade(6,0,2,6)' id='6'>Answer 6</button> <br>
+    <p id='incorrect' style='display:none'>Your answer is incorrect. 
+        You have <span id='lives'>3</span> lives left.</p>
+    <p id='partial' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+    <p id='correct' style='display:none'>Congrats! You have found the wae!<br>
+    <a href=placeholder>Follow the wae</a></p>
+    </center>
+    
+</body>
+</html>

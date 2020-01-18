@@ -1,0 +1,25 @@
+h1 {
+    text-align:center;
+}
+
+body {
+    background-color: lightblue;    
+}
+
+body p{
+    
+    text-indent: 2.0em;
+}
+
+#body {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+#blueData
+{
+ 
+}

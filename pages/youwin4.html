@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "//fonts.googleapis.com/css?family=Lora" />
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script type='text/Javascript'>
+            var key = [[6]];
+            var numAns = [0];
+            var lives = 1;
+        </script>
+        <script type='text/Javascript' src="Question.js">
+        </script>
+        <style>
+            body  {
+            background-image: url("images/blursunsky2.jpg");
+            background-color: rgb(0,0,0);
+            background-size:200%;
+            background-repeat: no-repeat;
+        }
+        </style>
+     
+    </head>
+    
+    
+    <body>
+        <p>As you finish verbally vomiting all your knowledge out into the heavens, your body begins to float off the floor. Is this it? Is it finally your time to be free? You look down. There is a single tear in the eye of your red friend, doubtless spurred by the bittersweet sendoff as you leave his world and return to your own. A rift opens in the sky, and you reach out towards it...!</p>
+        <p>But... you can't quite reach! Panicking, you look back down at him.</p>
+        <p>"Print 'Hello World'! It's a rite of passage! You know <i>da wae</i>!!!"</p>
+        <p>Filled with new inspiration by his words, you decide what to do...</p>
+        
+        <center>
+        <h3>Final </h3>
+        <p>Pick the right one!</p>
+        <button type='button' onclick='Grade(1,0,1,10)' id='1'>print(Hello World!)</button>
+        <button type='button' onclick='Grade(2,0,1,10)' id='2'>print("Hello World.")</button> <br>
+        <button type='button' onclick='Grade(3,0,1,10)' id='3'>cout << "Hello World!" << endl;</button>
+        <button type='button' onclick='Grade(4,0,1,10)' id='4'>printf("Hello World!\n")</button> <br>
+        <button type='button' onclick='Grade(5,0,1,10)' id='5'>echo | Hello World!</button>
+        <button type='button' onclick='Grade(6,0,1,10)' id='6'>print("Hello World!")</button> <br>
+        <button type='button' onclick='Grade(7,0,1,10)' id='7'>System.out.print("Hello World!")</button>
+        <button type='button' onclick='Grade(8,0,1,10)' id='8'>print Hello World!</button> <br>
+        <button type='button' onclick='Grade(9,0,1,10)' id='9'>Stdout.print("Hello World!")</button>
+        <button type='button' onclick='Grade(10,0,1,10)' id='10'>puts 'Hello World!'</button> <br>
+        <p id='incorrect0' style='display:none'>You... you failed to find the wae.
+            You have <span id='lives0'>3</span> <span id='life0'>lives</span> left.</p>
+        <p id='partial0' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+        <p id='correct0' style='display:none'>You've done it! You are the master of the wae!<br>
+        <a href=youwin5.html> >>> Continue.</a></p>
+        
+        <p id='failure' style='display:none'><a href = "youdied5.html"> >>> Is this the end?</a></p>
+        
+        <br />
+        <p><strong>Health: </strong> 
+        <img src="images/knucklesLife.png" id="hp0" width="69" length="69">
+        </p>
+        </center> 
+        
+        
+    </body>
+</html>

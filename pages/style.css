@@ -1,0 +1,47 @@
+h1 {
+    text-align:center;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Lora;
+}
+
+body p {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    text-indent: 35px;
+}
+
+.codefont {
+    font-family: Inconsolata, monospace;
+}
+
+.code1 {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 45px;
+    font-family: Inconsolata, monospace;
+}
+
+.code2 {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 45px;
+    font-family: Inconsolata, monospace;
+    text-align:center;
+}
+
+.question {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+
+
+#blueData
+{
+ 
+}

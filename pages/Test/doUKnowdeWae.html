@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<!-- reserved for title, java, css -->
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <script type='text/Javascript'>
+        i = 0;
+        document.getElementById('count').innerHTML = i;
+        function Count() {
+            i += 1;
+            document.getElementById('count').innerHTML = i;
+        }
+        function Countdown() {
+            i -= 1;
+            document.getElementById('count').innerHTML = i;
+        }
+    </script>
+    
+</head>
+
+<body>
+		<h1 id ='rawr'><em><center>rawrxd</center></em></h1>
+		<h2>This is the tale of time.</h2>
+        
+        <!-- Format of what a question will look like-->
+        <p><font face = "Comic Sans MS">Question One </font></p><br>
+        <form>
+        <input type="radio" name="choice" value="notdewae"> Not de wae <br />
+        <input type="radio" name="choice" value="notdewae"> Not de wae <br />
+        <input type="radio" name="choice" value="notdewae"> Not de wae <br />
+        <input type="radio" name="choice" value="dewae"> De wae
+        </form>
+        
+
+        <!-- Submit button doesn't work though-->
+        <button>Submit</button> 
+        <br />
+        <button type='button' 
+        onclick="Count()">Up
+        </button>
+    
+        <button type='button'  
+        onclick="Countdown()">Down
+        </button>
+    
+    <p id='count'>0</p>
+        
+		<img src="https://dl.dropboxusercontent.com/s/d0cz2r73x04prem/knucklez-animFINAL.gif?dl=0">
+		<!-- <img src="https://i.ytimg.com/vi/6lYNF3flmFs/hqdefault.jpg"> -->
+
+
+	</body>
+</html> 

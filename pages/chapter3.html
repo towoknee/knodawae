@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "//fonts.googleapis.com/css?family=Lora" />
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script type='text/Javascript'>
+            var key = [[2],[3],[2],[2]];
+            var numAns = [0,0,0,0]
+            var lives = 3;
+        </script>
+        <script type='text/Javascript' src="Question.js">
+        </script>
+        <style>
+            body  {
+            background-image: url("images/candyland.jpg");
+            background-color: rgb(165, 57, 18);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        </style>
+    </head>
+    
+    
+    <body>
+        <h1 id = 'rawr'>
+            Chapter 3: Thrown For a Loop
+        </h1>
+        <br>
+        
+<p>You realize that you're not completely screwed due to the mad knowledge that was just sput, and you go through the open door. Moments after going through, you hear an intense growling, and you stop in terror. Fearing for your life, you finally begin critically thinking and try to come up with all the possible ways to avoid detection. Sometime during this process, you realize that the sound came from your stomach all along, and that you had skipped dessert. </p>
+<p>"How foolish of me to forget such an important meal," you sigh as you keep trodding through the dark path. </p>
+<p>Too depressed to care anymore, you keep moving. However, without your knowledge, you were able to unconsciously use echolocation with the growls of your stomach to find the wae to the next location. </p>
+<p>As you begin to come back to reality, you find yourself in a very bright and colorful place. At the epicenter of this whole area, you see three massive containers, each filled with different contents. You see that the first one is full of chocolate! Your mouth begins to water.</p>
+<p>"That one is eggnog flavored," says the red thing. </p>
+<p>"Absolutely disgusting", you think, as the saliva quickly retracts back into your mouth. </p>
+<p>The second container is packed with baby cucumbers. You like cucumbers, but the size was just not to your liking, and besides, you were hungry for dessert anyways.</p>
+<p>The last container is filled with ice cream. All kinds of ice cream, somehow stuffed into one container.</p>
+<p>"Finally, something edible," you think. </p>
+<p>"The wae will not always be easy", says Reddy.</p>
+<p>As you examine the containers closer, you notice that each one of them has a label on them. </p>
+<div class='code1'> if x > 0 | elif x < 0 | else </div> <br />
+<p>What do they mean, you wonder as red boi approaches you with a coin. </p>
+<p>"This coin has a value that represents <span class='codefont'>x</span>. If you insert this coin into the correct container, the contents will spill out, but if you get it wrong, I can't guarantee that you will be ever to find the wae... By the way this coin has a value of <span class='codefont'>0</span>."</p>
+<p>Afraid to ask what the wae actually is, you proceed to the containers with the coin in hand. These are <strong>conditionals.</strong></p>
+<p> Most useful programs require us to be able to examine certain conditions, and be able to proceed with our program based on that. There are three main conditional statements that Python uses: <span class='codefont'>if, elif,</span> and<span class='codefont'> else</span>. The statement after the conditional is called the condition <span class='codefont'>(x > 0, x < 0)</span>. If the conditional statement turns out to be true, then the resulting lines of code in the condition is executed. If it's not true, then it proceeds to the next conditional statement and then to the next one until it is true. In our example, the coin would be placed in the else statement since it is not greater than zero, nor is it less than zero. Else is everything else that the prior conditional statements do not cover. Here are some examples:</p>
+<div class='code1'>
+if x % 2 == 0:<br />
+&emsp;&emsp;print ("your number is even")<br />
+else:<br />
+&emsp;&emsp;print ("your number is odd")<br />
+</div>
+<p>If you are given <span class='codefont'>x = 4</span>, <span class='codefont'>4 % 2</span> would be <span class='codefont'>0</span>, which would output "your number is even" </p>
+<p>An extremely important topic in programming in general is <strong>iteration</strong>. There are two types of iterators in Python: <span class='codefont'>for</span> and <span class='codefont'>while</span>.
+A <span class='codefont'>for</span> loop iterates through a given sequence. It can be best seen through an example. Say we are given a list of numbers <span class='codefont'>list = [1, 2, 4, 5]</span>. In order to go through this list (the list is assigned to the variable list) and output the results, the following syntax would look something like this:</p>
+<div class='code1'>
+for x in list: <br />
+&emsp;&emsp;print(x) <br />
+</div>
+<p>This would go through the whole list and print out all of the values. <span class='codefont'>x</span> would represent each element in the list. The output would be <span class='codefont'>1, 2, 4, 5</span>. We also do not have to specify the list and can use <span class='codefont'>range</span>. 
+<span class='codefont'>range(4)</span> would be the same as <span class='codefont'>[0,1,2,3]</span> and <span class='codefont'>range(3,6)</span> would be <span class='codefont'>[3,4,5]</span>. So:</p>
+<div class='code1'>
+for x in range(4):<br />
+&emsp;&emsp;print (x) <br />
+</div>
+<p>Would result in <span class='codefont'>0,1,2,3</span></p>
+<p>A while loop repeats the content of its body as long as a certain condition is met. Its syntax looks a little something like this:</p>
+<div class='code1'>
+while x > 4:<br />
+&emsp;&emsp;print ("Likey Likey")<br />
+</div>
+ <p>However, many of you intellectuals out there may have noticed that there is an error to this. There must be a statement that continuously updates the variable that is being compared (<span class='codefont'>x</span>). If there isn't one, then this loop would go on <strong>forever</strong>. This is called an infinite loop. You don't want this. The correct code would be:</p>
+<div class='code1'>
+while x>20:<br />
+&emsp;&emsp;print ("Likey Likey")<br />
+&emsp;&emsp;<strong>x = x - 1</strong> <br />
+</div>
+<p>The last statement would let the conditional in the while statement become false at some point, thus ending the loop. We can also utilize the <span class='codefont'>break</span> function. This causes the loop to immediately (who would have thought?) break out of the loop. Therefore, combining an <span class='codefont'>if</span> statement with a <span class='codefont'>while</span> statement can be extremely useful in many situations. For ex: </p>
+<div class='code1'>
+while age < 21:<br />
+&emsp;&emsp;print ("cool")<br />
+&emsp;&emsp;if age == 13:<br />
+&emsp;&emsp;&emsp;&emsp;break<br />
+&emsp;&emsp;age = age + 1
+</div>
+<p>Here, if the <span class='codefont'>age</span> is <span class='codefont'>13</span>, then the loop ends. </p>
+<p>Cool, now answer all of these questions before you can have your ice cream. You fat lard. </p>
+   
+            <center>
+            <h3>Question One</h3>
+            <p>What is printed from the following code if <span class='codefont'>x</span> is 3?</p>
+                <div class='code1'>
+                <div style='text-align:left; width:220px; margin:auto'>
+                if x % 2 == 0: <br>
+                &emsp;&emsp;print ("Even!")<br>
+                elif x == 3:<br>
+                &emsp;&emsp;print("x is 3!")<br>
+                else<br>
+                &emsp;&emsp;print("I don't know!")
+                </div>
+                </div><br>
+            <button type='button' onclick='Grade(1,0)' id='1'>Even!</button>
+            <button type='button' onclick='Grade(2,0)' id='2'>x is 3!</button> <br>
+            <button type='button' onclick='Grade(3,0)' id='3'>I don't know!</button>
+            <button type='button' onclick='Grade(4,0)' id='4'>"x is 3!"</button> <br>
+            <p id='incorrect0' style='display:none'>Your answer is incorrect. 
+             You have <span id='lives0'>3</span> <span id='life0'>lives</span> left.</p>
+            <p id='partial0' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+            <p id='correct0' style='display:none'>Congrats! You have found the wae!<br></p>
+            
+            <div id='q0' style="display:none">
+            <h3>Question Two </h3>
+            <p>Given <span class='codefont'>list = [1, 2, 3, 4, 5]</span>?</p>
+            <p>What numbers would be printed? (Ignore formatting)</p>
+            <div class='code1'> 
+            <div style='text-align:left; width:220px; margin:auto'>
+                for x in list:<br>
+                &emsp;&emsp;if x % 2 == 0:<br>
+                &emsp;&emsp;&emsp;&emsp;print(x)
+            </div>
+            </div><br>
+            <button type='button' onclick='Grade(1,1)' id='11'>1, 2, 3, 4, 5</button>
+            <button type='button' onclick='Grade(2,1)' id='12'>1, 3, 5</button> <br>
+            <button type='button' onclick='Grade(3,1)' id='13'>2, 4</button>
+            <button type='button' onclick='Grade(4,1)' id='14'>1, 2, 3</button> <br>
+            <p id='incorrect1' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives1'>3</span> <span id='life1'>lives</span> left.</p>
+            <p id='partial1' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+            <p id='correct1' style='display:none'>Congrats! You have found the wae!<br></p>
+            </div>
+            
+            <div id='q1' style="display:none">
+            <h3>Question Three</h3>
+            <p>Which numbers are printed from the following? (Ignore formatting)</p>
+            <div class='code1'> 
+            <div style='text-align:left; width:220px; margin:auto'>
+                for y in range(2, 6):<br>
+                &emsp;&emsp;print(y)</div>
+            </div><br>
+            <button type='button' onclick='Grade(1,2)' id='21'>2, 6</button>
+            <button type='button' onclick='Grade(2,2)' id='22'>2, 3, 4, 5</button> <br>
+            <button type='button' onclick='Grade(3,2)' id='23'>2, 3, 4, 5, 6</button>
+            <button type='button' onclick='Grade(4,2)' id='24'>6, 5, 4, 3, 2, 1</button> <br>
+            <p id='incorrect2' style='display:none'>Your answer is incorrect. 
+            You have <span id='lives2'>3</span> <span id='life2'>lives</span> left.</p>
+            <p id='partial2' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+            <p id='correct2' style='display:none'>Congrats! You have found the wae!<br></p>
+            </div>
+            
+            
+            <div id='q2' style="display:none">
+            <h3>Question Four</h3>
+            <p>What is the value of <span class='codefont'>x</span> after the while loop has finished?</p>
+            <div class='code1'>
+            <div style='text-align:left; width:220px; margin:auto'>
+                x = 0 <br> 
+                while x < 4:<br>
+                &emsp;&emsp;x = x + 1
+            </div>
+            </div><br>
+            <button type='button' onclick='Grade(1,3)' id='31'>0</button>
+            <button type='button' onclick='Grade(2,3)' id='32'>4</button> <br>
+            <button type='button' onclick='Grade(3,3)' id='33'>5</button>
+            <button type='button' onclick='Grade(4,3)' id='34'>3</button> <br>
+            <p id='incorrect3' style='display:none'>Your answer is incorrect. 
+                You have <span id='lives3'>3</span> <span id='life3'>lives</span> left.</p>
+            <p id='partial3' style='display:none'>Your answer is correct, but it seems that there is still more to the wae to be found.</p>
+            <p id='correct3' style='display:none'>Congrats! You have found the wae!<br>
+            <a href = "youwin3.html"> >>> Follow the wae</a></p>
+            </div>
+            
+            
+            <p id='failure' style='display:none'><a href = "youdied3.html"> >>> You have failed to find the wae</a></p>
+            
+            <br />
+            <p><strong>Health: </strong> 
+            <img src="images/knucklesLife.png" id="hp0" width="69" length="69">
+            <img src="images/knucklesLife.png" id="hp1" width="69" length="69">
+            <img src="images/knucklesLife.png" id="hp2" width="69" length="69"> </p>
+            </center>
+    
+    </body>
+</html>
